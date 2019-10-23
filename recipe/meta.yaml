@@ -1,6 +1,6 @@
 {% set name = "catkin_pkg" %}
-{% set version = "0.4.13" %}
-{% set sha256 = "843a8ad05e498e1eb3c9f75496d7410058af3a9d8e52b4339a8d1a6b3ff3aced" %}
+{% set version = "0.4.14" %}
+{% set sha256 = "9dd2864ce276f1bf926360e02b0ee046961aedf99f3bf758d86b271e649969fb" %}
 
 package:
   name: {{ name|lower }}
@@ -47,6 +47,7 @@ test:
     - catkin_test_changelog --help
   imports:
     - catkin_pkg
+
 about:
   home: http://wiki.ros.org/catkin_pkg
   license: BSD 3-Clause
@@ -59,3 +60,4 @@ extra:
   recipe-maintainers:
     - wolfv
     - lesteve
+    - seanyen
