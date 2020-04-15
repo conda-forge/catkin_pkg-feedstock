@@ -33,8 +33,7 @@ requirements:
     - python
     - docutils
     - python-dateutil
-    - pyparsing
-    - setuptools
+    - pyparsing >=1.5.7
 
 test:
   commands:
@@ -50,7 +49,7 @@ test:
 
 about:
   home: http://wiki.ros.org/catkin_pkg
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Standalone Python library for the catkin build system.
