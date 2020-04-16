@@ -1,6 +1,6 @@
 {% set name = "catkin_pkg" %}
-{% set version = "0.4.16" %}
-{% set sha256 = "006a2d24f1a591f48a81e2d1722aa4ab2ec857e6f8fff91eda0f56251ce05ad9" %}
+{% set version = "0.4.17" %}
+{% set sha256 = "ce7adfc4a8393e10339abb3eb99c0e674e853a10b2431919b2eab1ba0f9628c5" %}
 
 package:
   name: {{ name|lower }}
@@ -31,10 +31,10 @@ requirements:
     - setuptools
   run:
     - python
+    - setuptools
     - docutils
     - python-dateutil
-    - pyparsing
-    - setuptools
+    - pyparsing >=1.5.7
 
 test:
   commands:
@@ -50,10 +50,10 @@ test:
 
 about:
   home: http://wiki.ros.org/catkin_pkg
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Standalone Python library for the catkin build system.'
+  summary: Standalone Python library for the catkin build system.
   dev_url: https://github.com/ros-infrastructure/catkin_pkg
 
 extra:
