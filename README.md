@@ -5,7 +5,7 @@ Home: http://wiki.ros.org/catkin_pkg
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Standalone Python library for the catkin build system.
 
