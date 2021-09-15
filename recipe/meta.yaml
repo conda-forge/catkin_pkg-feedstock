@@ -10,10 +10,12 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/ros-infrastructure/catkin_pkg/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - fix-multiple-pkgs.patch
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - catkin_create_pkg = catkin_pkg.cli.create_pkg:main
@@ -61,3 +63,4 @@ extra:
     - wolfv
     - lesteve
     - seanyen
+    - Tobias-Fischer
