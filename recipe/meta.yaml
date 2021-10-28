@@ -1,6 +1,6 @@
 {% set name = "catkin_pkg" %}
-{% set version = "0.4.23" %}
-{% set sha256 = "ecb8f1eac9e20b9f2d42a2db00d156383ada41f4fe2e78f11d990a1095ef9ba2" %}
+{% set version = "0.4.24" %}
+{% set sha256 = "57ea09fd51d9a67ccf5a0660a8f84794304182c4f644f27ad835a979567893b1" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - catkin_create_pkg = catkin_pkg.cli.create_pkg:main
