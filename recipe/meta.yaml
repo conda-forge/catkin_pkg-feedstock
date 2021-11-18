@@ -12,10 +12,11 @@ source:
   sha256: {{ sha256 }}
   patches:
     - fix-multiple-pkgs.patch
+    - fix-new-setuptools.patch
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - catkin_create_pkg = catkin_pkg.cli.create_pkg:main
