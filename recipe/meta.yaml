@@ -12,7 +12,6 @@ source:
   sha256: {{ sha256 }}
   patches:
     - fix-multiple-pkgs.patch
-    - fix-new-setuptools.patch
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
