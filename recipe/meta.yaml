@@ -1,6 +1,6 @@
 {% set name = "catkin_pkg" %}
-{% set version = "0.4.24" %}
-{% set sha256 = "57ea09fd51d9a67ccf5a0660a8f84794304182c4f644f27ad835a979567893b1" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "d3f0f6a4099800890714141746a60dbd351e7feae6c87ca75c3ff9241a0dc77d" %}
 
 package:
   name: {{ name|lower }}
@@ -12,11 +12,10 @@ source:
   sha256: {{ sha256 }}
   patches:
     - fix-multiple-pkgs.patch
-    - fix-new-setuptools.patch
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - catkin_create_pkg = catkin_pkg.cli.create_pkg:main
