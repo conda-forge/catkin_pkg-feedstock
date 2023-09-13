@@ -1,11 +1,11 @@
-About catkin_pkg
-================
+About catkin_pkg-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/catkin_pkg-feedstock/blob/main/LICENSE.txt)
 
 Home: http://wiki.ros.org/catkin_pkg
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/catkin_pkg-feedstock/blob/main/LICENSE.txt)
 
 Summary: Standalone Python library for the catkin build system.
 
