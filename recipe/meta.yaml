@@ -15,7 +15,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - catkin_create_pkg = catkin_pkg.cli.create_pkg:main
@@ -28,17 +28,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - setuptools
     - docutils
     - python-dateutil
     - pyparsing >=1.5.7
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - catkin_create_pkg --help
     - catkin_find_pkg --help
