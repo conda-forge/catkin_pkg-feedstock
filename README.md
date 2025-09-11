@@ -29,7 +29,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-catkin_pkg-green.svg)](https://anaconda.org/conda-forge/catkin_pkg) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/catkin_pkg.svg)](https://anaconda.org/conda-forge/catkin_pkg) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/catkin_pkg.svg)](https://anaconda.org/conda-forge/catkin_pkg) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/catkin_pkg.svg)](https://anaconda.org/conda-forge/catkin_pkg) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-catkin__pkg-green.svg)](https://anaconda.org/conda-forge/catkin_pkg) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/catkin_pkg.svg)](https://anaconda.org/conda-forge/catkin_pkg) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/catkin_pkg.svg)](https://anaconda.org/conda-forge/catkin_pkg) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/catkin_pkg.svg)](https://anaconda.org/conda-forge/catkin_pkg) |
 
 Installing catkin_pkg
 =====================
