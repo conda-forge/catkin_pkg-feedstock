@@ -37,6 +37,7 @@ requirements:
     - docutils
     - python-dateutil
     - pyparsing >=1.5.7
+    - packaging
 
 test:
   requires:
