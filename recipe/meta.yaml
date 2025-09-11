@@ -1,6 +1,6 @@
 {% set name = "catkin_pkg" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "48e88c995838807165bb70c6272abab2d6dda5efc210f62db8ac714d4c96a0c6" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "32c0410cb815497a0253838ca8f7d222d345a3bbd189fa4e61374a8f77c42709" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - catkin_create_pkg = catkin_pkg.cli.create_pkg:main
@@ -37,6 +37,7 @@ requirements:
     - docutils
     - python-dateutil
     - pyparsing >=1.5.7
+    - packaging
 
 test:
   requires:
